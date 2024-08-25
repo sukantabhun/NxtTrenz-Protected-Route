@@ -22,7 +22,11 @@ const Login = props => {
       history.replace('/')
     }
   }
-
+  const jwtToken = Cookies.get('jwt_token')
+  if (jwtToken !== undefined) {
+    return <Redirect to="/" />
+  }
+  
   return (
     <div>
       <h1>Please Login</h1>
