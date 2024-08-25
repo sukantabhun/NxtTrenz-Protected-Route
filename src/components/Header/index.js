@@ -2,7 +2,7 @@ import {Link, withRouter} from 'react-router-dom'
 import './index.css'
 
 const Header = () => (
-  <div>
+  <div className="header">
     <Link to="/">
       <h1>Home</h1>
     </Link>

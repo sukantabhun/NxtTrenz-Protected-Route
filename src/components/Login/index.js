@@ -1,5 +1,4 @@
 import Cookies from 'js-cookie'
-import {Redirect} from 'react-router-dom'
 import './index.css'
 
 const Login = props => {
@@ -22,10 +21,6 @@ const Login = props => {
       })
       history.replace('/')
     }
-  }
-  const jwtToken = Cookies.get('jwt_token')
-  if (jwtToken !== undefined) {
-    return <Redirect to="/" />
   }
 
   return (
